@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "product b mới",
+      "price": 200,
+      "status": false
+    },
+    {
+      "name": "Đồ Nữ",
+      "price": 111111,
+      "id": 3
+    },
+    {
+      "name": "manhmuc",
+      "price": 200000,
+      "status": true,
+      "id": 4
+    },
+    {
+      "name": "tienmanhnguyen",
+      "price": 900000,
+      "status": true,
+      "id": 5
+    },
+    {
+      "name": "product f",
+      "price": 12345,
+      "status": true,
+      "id": 6
+    }
+  ]
+}

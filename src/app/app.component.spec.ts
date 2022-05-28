@@ -1,6 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { AboutComponent } from './pages/about/about.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 describe('AppComponent', () => {
@@ -11,7 +14,9 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
-      
+        // HomeComponent,
+        // HeaderComponent,
+        AboutComponent
       ],
     }).compileComponents();
   });

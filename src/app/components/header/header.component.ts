@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  title= "header componet"
+  message: string = 'hello component';
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+
+
+// function HeaderComponet(){
+//   const  [message, setMessagge] = useState<string>("Hello");
+//   return (
+//     <div>
+//       {message}
+//     </div>
+//   )
+// }
