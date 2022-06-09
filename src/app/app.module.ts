@@ -12,7 +12,9 @@ import { ProductAddComponent } from './components/product-add/product-add.compon
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { HttpClientModule } from '@angular/common/http'
 import { RouterModule } from '@angular/router';
-import { Toast } from 'ngx-toastr';
+
+import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.component';
+import { LayoutWebsiteComponent } from './layouts/layout-website/layout-website.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,8 @@ import { Toast } from 'ngx-toastr';
     ProductsComponent,
     ProductAddComponent,
     ProductDetailComponent,
+    LayoutAdminComponent,
+    LayoutWebsiteComponent,
   ],
   imports: [
     BrowserModule,
