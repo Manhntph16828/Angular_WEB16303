@@ -1,0 +1,150 @@
+<header>
+    <div class="container max-w-6xl mx-auto px-5">
+        
+    </div>
+</header>
+<section class="info">
+    <div class="container max-w-6xl mx-auto px-5">
+        <app-header></app-header>
+    </div>
+</section>
+<section class="info py-10">
+    <div class="max-w-6xl mx-auto px-5">
+        <div class="grid md:grid-cols-3">
+            <div class="md:col-span-2 order-2 md:order-1">
+                <h2 class="text-3xl font-bold mt-10 md:mt-0 md:text-5xl md:leading-[60px]">
+                    Hi, I am <span class="">Manh</span>,<br>
+                    <span>Creative Technologist</span>
+                </h2>
+                <p class="text-base my-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <a href="" class="inline-block bg-red-500 py-3 px-10 rounded-sm text-white mb-16">Download Resume</a>
+            </div>
+            <div class="md:col-span-1 order-1 md:order-2 ">
+                <img src="https://picsum.photos/id/1011/243/243" alt=""   class="rounded-full mx-auto md:ml-auto md:mr-0">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="recent-post bg-[#EDF7FA] py-10">
+    <div class="max-w-6xl mx-auto px-5">
+        <div class="flex justify-center md:justify-between py-5">
+            <h2 class="text-xl">Recent posts</h2>
+            <a href="" class="hidden md:inline-block text-[#00A8CC] underline">View all</a>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white px-5 py-8">
+                <h3 class="mb-5">
+                    <a href="" class="text-2xl font-bold">
+                        Making a design system from scratch
+                    </a>
+                </h3>
+                <div class="flex space-x-4 text-[#21243D] mb-5">
+                    <span>12 Feb 2020</span>
+                    <span>|</span>
+                    <a href=""><span>Design, Pattern</span></a>
+                </div>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="bg-white px-5 py-8">
+                <h3 class="mb-5">
+                    <a href="" class="text-2xl font-bold">
+                        Creating pixel perfect icons in Figma
+                    </a>
+                </h3>
+                <div class="flex space-x-4 text-[#21243D] mb-5">
+                    <span>12 Feb 2020</span>
+                    <span>|</span>
+                    <a href=""><span>Figma, Icon Design</span></a>
+                </div>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="featured-works bg-[#EDF7FA] py-10">
+    <div class="container max-w-6xl mx-auto px-5">
+        <div class="flex justify-between pb-4">
+            <h2 class="text-xl">Recent posts</h2>
+            <a href="" class="text-[#00A8CC]">View all</a>
+        </div>
+        <div class="grid md:grid-cols-2 grap-8">
+            <div class="bg-white px-5 py-8 ">
+                <h3 class="mb-5">
+                    <a href="" class="text-2xl font-bold">Making a design system from scratch</a>
+                </h3>
+                <div class="flex space-x-4 text=[#21243D] mb-5">
+                    <span>12 Feb 2020</span>
+                    <span> | </span>
+                    <span>Design, Pattern</span>
+                </div>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+
+            <div class="bg-white px-5 py-8">
+                <h3 class="mb-5">   
+                    <a href="" class="text-2xl font-bold">Making a design system from scratch</a>
+                </h3>
+                <div class="flex space-x-4 text=[#21243D] mb-5">
+                    <span>12 Feb 2020</span>
+                    <span> | </span>
+                    <span>Design, Pattern</span>
+                </div>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div>
+        
+    </div>
+</section> -->
+<section>
+    <div class="container max-w-6xl mx-auto px-5">
+        <div class="flex justify-between py-5">
+            <h2 class="text-xl">Featured works</h2>
+        </div>
+        <div *ngFor="let post of postList; let i = index">
+            <div class="grid md:grid-cols-[246px,auto] grap-8 border-b py-8">
+                <div>
+                    <img src="https://picsum.photos/246/180" class="w-full rounded-lg" alt="">
+                </div>
+                <div class="pl-4">
+                    <h3><a href="" class="text-[#21243D] text[30px] font-bold">{{ post.title }}</a></h3>
+                    <div class="flex space-x-4 item-center py-5">
+                        <span class="inline-block bg-[#142850] py-1 px-2 font-blod text-white rounded-full">2020  </span>
+                        <span class="text-[8695A4]">Dashboard</span>
+                    </div>
+                    <p class="text-[#21243D]">{{ post.shortDesc }}</p>
+                </div>
+            </div>
+    </div>
+        <!--  -->
+        <!-- <div class="grid md:grid-cols-[246px,auto] grap-8 border-b py-8">
+            <div>
+                <img src="./img/Rectangle 32.jpg" class="rounded-lg w-full" alt="">
+            </div>
+            <div class="pl-4">
+                <h3><a href="" class="text-[#21243D] text[30px] font-bold">Designing Dashboards</a></h3>
+                <div class="flex space-x-4 item-center py-5">
+                    <span class="inline-block bg-[#142850] py-1 px-2 font-blod text-white rounded-full">2020  </span>
+                    <span class="text-[8695A4]">Dashboard</span>
+                </div>
+                <p class="text-[#21243D]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div> -->
+        <!--  -->
+        <!-- <div class="grid md:grid-cols-[246px,auto] grap-8 border-b py-8">
+            <div>
+                <img src="./img/Rectangle 32.jpg" class="rounded-lg w-full" alt="">
+            </div>
+            <div class="pl-4">
+                <h3><a href="" class="text-[#21243D] text[30px] font-bold">Designing Dashboards</a></h3>
+                <div class="flex space-x-4 item-center py-5">
+                    <span class="inline-block bg-[#142850] py-1 px-2 font-blod text-white rounded-full">2020  </span>
+                    <span class="text-[8695A4]">Dashboard</span>
+                </div>
+                <p class="text-[#21243D]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div> -->
+    </div>
+</section>
+<app-footer></app-footer>
+

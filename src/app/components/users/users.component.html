@@ -1,0 +1,36 @@
+<h1  class="text-2xl mb-10 ">User</h1>
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2">
+    <a routerLink="/admin/user/add">Thêm user</a>
+  </button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+           <td>STT</td>
+           <td>Name</td>
+           <td>position</td>
+           <td>about</td>
+           <td>cv</td>
+           <td>Xử lí</td> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.position }}</td>
+            <td>{{ user.about }}</td>
+            <td>{{ user.cv }}</td>
+            <td>
+                <!-- <button class="btn btn-info">Info</button> -->
+                <button class="btn btn-primary ms-1" routerLink="/admin/user/edit/{{ user.id }}">
+                    Edit
+                </button>
+                <button class="btn btn-danger ms-1" (click)="onRemoveItem(user.id!)">
+                    Remove
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- <router-outlet></router-outlet> -->
+

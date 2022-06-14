@@ -1,0 +1,37 @@
+<h1  class="text-2xl mb-10 ">Bài post</h1>
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-2">
+    <a routerLink="/admin/post/add">Thêm bài post</a>
+  </button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+           <td>STT</td>
+           <td>Title</td>
+           <td>img</td>
+           <td>short-desc</td>
+           <td>categoriesPosts</td>
+           <td>Xử lí</td> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of postList; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.image }}</td>
+            <td>{{ post.shortDesc }}</td>
+            <td>{{ post.categoriesPosts }}</td>
+            <td>
+                <button class="btn btn-info" routerLink="/admin/post/{{ post.id }}">Info</button>
+                <button class="btn btn-primary ms-1" routerLink="/admin/post/edit/{{ post.id }}">
+                    Edit
+                </button>
+                <button class="btn btn-danger ms-1" (click)="onRemoveItem(post.id!)">
+                    Remove
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- <router-outlet></router-outlet> -->
+
+

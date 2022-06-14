@@ -1,12 +1,6 @@
 {
   "products": [
     {
-      "id": 2,
-      "name": "product b mới",
-      "price": 200,
-      "status": false
-    },
-    {
       "name": "Đồ Nữ",
       "price": 111111,
       "id": 3
@@ -18,16 +12,77 @@
       "id": 4
     },
     {
-      "name": "tienmanhnguyen",
-      "price": 900000,
+      "name": "sp mới 9",
+      "price": "100000",
       "status": true,
       "id": 5
     },
     {
-      "name": "product f",
-      "price": 12345,
+      "name": "sp mới 9",
+      "price": "100000",
       "status": true,
       "id": 6
+    },
+    {
+      "name": "sp mới 9",
+      "price": "100000",
+      "status": true,
+      "id": 7
+    },
+    {
+      "name": "manhmuc999",
+      "price": "12333333",
+      "status": true,
+      "id": 8
+    },
+    {
+      "name": "sp mơi 12",
+      "price": "1233337777",
+      "status": true,
+      "id": 9
+    }
+  ],
+  "user": [
+    {
+      "name": "Nguyen Tien Manh mmmm",
+      "position": "IT",
+      "about": "Đẹp trai",
+      "cv": "C:\\fakepath\\33225ea1280be855b11a.jpg",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "title": "Làm sao để học tốt js",
+      "image": "C:\\fakepath\\4149b45bc0f100af59e0.jpg",
+      "createAt": "Đẹp trai",
+      "categoryPostId": "C:\\fakepath\\4149b45bc0f100af59e0.jpg",
+      "shortDesc": "mô tả ngắn",
+      "desc": "Mô tả dài",
+      "categoriesPosts": "Tài liệu javascript",
+      "id": 2
+    },
+    {
+      "title": "Project mowis",
+      "image": "C:\\fakepath\\4149b45bc0f100af59e0.jpg",
+      "createAt": "Đẹp trai",
+      "categoryPostId": "2",
+      "shortDesc": "mô tả ngắn 2",
+      "desc": "Mô tả",
+      "categoriesPosts": "Tài liệu javascript",
+      "id": 3
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "title": "manhmuc",
+      "img": "aaaa",
+      "createAt": "about",
+      "categoryProjectId": 1,
+      "short-desc": "",
+      "desc": "",
+      "desccategoriesProjects": ""
     }
   ]
 }
